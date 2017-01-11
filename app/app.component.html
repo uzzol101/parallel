@@ -1,0 +1,10 @@
+<h1>{{name}}</h1>
+<nav>
+    <a href="#" class='btn btn-default' [routerLink]="['/heroes']">Heroes</a>
+    <a href="#" class='btn btn-default' [routerLink]="['/dashboard']">Dashboard</a>
+</nav>
+<div class="container">
+    <div class="row">
+        <router-outlet></router-outlet>
+    </div>
+</div>

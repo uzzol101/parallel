@@ -1,0 +1,146 @@
+@import "./sass_mixins";
+@import "bourbon";
+@import "../styles.css";
+// font sizes
+$breakpoints: ( small: 480px, medium: 768px, large: 1024px, vlarge:1200px);
+$h1-font-sizes: ( null: (23px, ), small: (36px, 1.3), medium: (38px, 1.4), large: (52px, 1.5));
+$p-font-sizes: ( null: (14px, ), small: 16px, medium: (17px, ), 900px: 18px, large: (17px, 1.5), 1440px: 17px, );
+$h3-font-sizes: ( null: (23px, 1.3), small: (36px, 1.3), medium: (33px, 1.2), large: (40px, 1.2), vlarge:(52px, 1.2));
+// modular-scale base setup
+// helper classes
+// @font-face {
+//     font-family: 'OpenSans-Light';
+//     src: url('../fonts/OpenSans-Light.ttf');
+// }
+
+// @font-face {
+//     font-family: 'Roboto-Bold';
+//     src: url('../fonts/Roboto-Bold.ttf');
+// }
+
+// @font-face {
+//     font-family: 'Roboto-Medium';
+//     src: url('../fonts/Roboto-Medium.ttf');
+// }
+
+// @font-face {
+//     font-family: 'Myriad-Pro';
+//     src: url('../fonts/Myriad-Pro.ttf');
+// }
+
+.clearfix {
+    @include clearfix;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none !important;
+}
+
+// Colors Variables
+$bdColor: #fff;
+$buttonColor: #d9272d;
+body {
+    font-family: 'Roboto-Medium';
+    //font-size: 1em;
+    line-height: 1.6;
+}
+
+.badge{
+    color: red;
+}
+.selected{
+    background: pink;
+}
+
+
+//bs3 navbar style reset
+
+// #mainNavigation {
+//     background: none;
+//     border: none;
+//     margin: 0;
+
+//     .nav {
+//         a {
+//             text-shadow: none;
+//             color: #fff;
+//             font-family: 'Myriad-Pro';
+//             font-size: 13px;
+//         }
+//         li > a:focus,
+//         a:hover {
+//             color: #fff;
+//             text-decoration: none;
+//             background: none;
+//         }
+//         .active > a {
+//             color: #fff;
+//             background: none;
+//             box-shadow: none;
+//             &:hover {
+//                 background: none;
+//                 box-shadow: none;
+//             }
+//         }
+//         .open > a,
+//         .open > a:hover,
+//         .open > a:focus {
+//             background: none;
+//         }
+//     } //nav
+//     .dropdown-menu {
+//         background: none;
+//     }
+// } //mainNavigation
+
+
+h1{
+    color: red;
+}
+.selected{
+    background: pink;
+    color: darken(pink,20%);
+    .badge{
+        background: lighten(gray,10%);
+    }
+}
+
+#selectedHero{
+    background: orange;
+    h3,p{
+        color: darken(white,50%);
+    }
+}
+
+
+@media (max-width: 479px) {
+  
+}
+
+@media (max-width: 767px) {
+  
+    
+}
+
+@media (min-width:480px) and (max-width:767px) {}
+
+@media (min-width:768px)and(max-width: 1199px ) {
+   
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+    
+}

@@ -1,0 +1,39 @@
+@import url(../styles.css);
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.clear-left {
+  clear: left; }
+
+.row-centered {
+  text-align: center; }
+
+.col-centered {
+  display: inline-block;
+  float: none !important; }
+
+body {
+  font-family: 'Roboto-Medium';
+  line-height: 1.6; }
+
+.badge {
+  color: red; }
+
+.selected {
+  background: pink; }
+
+h1 {
+  color: red; }
+
+.selected {
+  background: pink;
+  color: #ff5a77; }
+  .selected .badge {
+    background: #9a9a9a; }
+
+#selectedHero {
+  background: orange; }
+  #selectedHero h3, #selectedHero p {
+    color: gray; }

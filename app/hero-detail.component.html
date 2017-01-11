@@ -1,0 +1,11 @@
+<div class="col-sm-6">
+    <div *ngIf='hero'>
+        You have selected
+        <br> {{hero.id}}
+        <input type="text" [(ngModel)]="hero.name">
+    </div>
+    <br>
+    <br>
+    <button class="btn btn-default" (click)='goBack()'>Go Back</button>
+    <button class="btn btn-success" (click)="save()">Save Hero</button>
+</div>
